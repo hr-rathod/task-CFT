@@ -246,14 +246,87 @@ border-radius: 8px;
 border: 0px;
 margin-top: 20px;
   }
-/* ------ Card ------ */
-.cardContainer{
+  /* ------ Card ------ */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 274px); /* Three columns with fixed width */
+  gap: 20px; /* Gap between cards */
+  margin-top: 18px;
+}
+/* Add this CSS in your style.css */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display 3 cards per row */
+  gap: 20px; /* Gap between cards */
+}
+/* Add this CSS in your style.css */
+.card {
+  position: relative; /* Make the card container position relative */
+}
+
+.deleteButton {
+  position: absolute; /* Position the button absolutely within the card container */
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust left position */
+  background-color: red; /* Change button color */
+  color: white; /* Change text color */
+  border: none;
+  border-radius: 50%; /* Make button round */
+  width: 30px; /* Adjust button size */
+  height: 30px; /* Adjust button size */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-2 {
+  width: 274px;
+  height: 313px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+}
+
+.card-2:not(:last-child) {
+  margin-bottom: 0; /* Remove margin from last card in each row */
+}
+
+.cardTitle {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px; /* Add margin to the title */
+  margin-bottom: 10px; /* Add margin to the title */
+  padding: 0 10px; /* Add padding to the title */
+}
+
+.cardText {
+  padding: 0 10px; /* Add padding to the text content */
+  flex: 1; /* Allow text content to grow and fill remaining space */
+}
+
+/* Card List */
+.cardsList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+/* ------ List ------ */
+.listContainer{
     display: flex;
     align-items: center;
     margin-top: 18px;
    
 }
-.card{
+.list{
   padding: 0px 10px;
     width: 859px;
 height: 110px;
@@ -261,7 +334,7 @@ border-radius: 16px;
 background: #FFF;
 box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
 }
-.cardTitle{
+.listTitle{
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;  

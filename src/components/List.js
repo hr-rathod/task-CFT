@@ -2,12 +2,12 @@ import React from 'react';
 
 const List = ({ post, onRemove }) => {
   return (
-    <div className='cardContainer'>
-      <div className='card'>
-        <div className='cardAvtar'></div>
-        <div className='cardText'>
-          <h1 className='cardTitle'>{post.title}</h1>
-          <p className='cardBody'>{post.body}</p>
+    <div className='listContainer'>
+      <div className='list'>
+        <div className='listAvtar'></div>
+        <div className='listText'>
+          <h1 className='listTitle'>{post.title}</h1>
+          <p className='listBody'>{post.body}</p>
         </div>
       </div>
       <div className='deleteBtn' onClick={() => onRemove(post.id)}>
