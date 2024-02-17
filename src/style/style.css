@@ -1,0 +1,328 @@
+/* SideBar Start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* SideBar.css */
+.sideBar {
+    height: 100vh;
+    width: 391px;
+    border-radius: 0px 32px 32px 0px;
+    background: #EBF2F7;
+    transition: width 0.5s; /* Add transition for smooth width change */
+    overflow-x: hidden; /* Hide overflowing content (when sidebar is collapsed) */
+  }
+  /* App.css */
+.app.sidebar-expanded .cardsList {
+  filter: blur(5px); /* Add the desired blur effect */
+}
+
+  .sideBar.expanded {
+    width: 1129px; /* Expanded width */
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14),
+                0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+  }
+  .sideBar .user {
+    width: 278px;
+    height: 77px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+  }
+  .sidebar {
+    background-color: #f0f0f0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    overflow-y: auto;
+    transition: width 0.5s;
+    padding: 20px;
+    display: flex;
+    z-index: 5;
+  }
+  .user .avtar {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #7d7d7d;
+  }
+  .sideBar.expanded .cardsList {
+    filter: blur(8px); /* Adjust the blur effect as needed */
+    transition: filter 0.3s ease; /* Add transition for smooth blur effect */
+  }
+.sideBar .userTitle{
+    color: #212121;
+    font-family: "Roboto", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.sideBar .userSubtitle{
+    color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.sideBar .feedBackBtn{ font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  display: flex;
+  letter-spacing: 0em;
+  justify-content: center;
+  align-items: center;
+  }
+.viewToggle{
+    margin: 0px;
+    width: 278px;
+height: 161px;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 25px;
+}
+.toggleTittle{
+    color: #212121;
+    margin-bottom: 21px;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+ text-align: center;
+ 
+
+}
+.toggleIcons{
+  display: flex;
+    width: 215px;
+    height: 78px;
+    border-radius: 8px;
+background: #EBF2F7;
+box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14) inset, 0px 8px 28px -6px rgba(24, 39, 75, 0.12) inset;
+}
+.toggleIcons div{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.toggleIcons div img{
+  width: 49px;
+height: 35px;
+}
+.sideBar .feedBack{
+    width: 278px;
+    height: 150px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.sideBar .feedBackTittle{
+    color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 21px;
+}
+::placeholder {
+  color:#C1C1C1;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.sideBar .feedBackBtn{
+    width: 229px;
+    height: 58px;
+    border-radius: 8px;
+    cursor: pointer;
+
+box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14) inset, 0px 8px 28px -6px rgba(24, 39, 75, 0.12) inset;
+}
+ /* feedBack */
+ .feedbackForm {
+  width: 595px;
+  padding-left: 100px;
+  
+  }
+  .feedbackForm  .form-group{
+    margin-top: 20px;
+  }
+  .feedbackForm .form-group label{
+    font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 29px;
+text-align: left;
+color: #272727;
+padding-left: 5px;
+
+
+  }
+  .form-group span{
+    font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 400;
+
+text-align: left;
+color: #E23D3D;
+
+  }
+  .feedbackForm h2{
+
+    font-family: "Roboto", sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 43px;
+letter-spacing: 0em;
+text-align: left;
+
+
+
+  }
+  .feedbackForm p{
+    font-family: "Roboto", sans-serif;
+  }
+  .feedbackForm  input,textarea{
+border: 0px;
+   width: 346px;
+height: 43px;
+background: #FFFFFF;
+border-radius: 8px;
+box-shadow: 0px 18px 88px -4px #18274B24;
+padding-left: 10px;
+padding-right: 10px;
+box-shadow: 0px 8px 28px -6px #18274B1F;
+margin-right: 10px;
+
+  }
+  .feedbackForm textarea{
+    width: 595px;
+height: 123px;
+
+
+  }
+  .feedbackForm.active {
+    right: 0; /* When active, bring the form to the right */
+  }
+  .formBtn{
+    font-family: "Roboto", sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+width: 231px;
+height: 46px;
+background: #5CC8A1;
+color: #FFFFFF;
+border-radius: 8px;
+border: 0px;
+margin-top: 20px;
+  }
+/* ------ Card ------ */
+.cardContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+   
+}
+.card{
+  padding: 0px 10px;
+    width: 859px;
+height: 110px;
+border-radius: 16px;
+background: #FFF;
+box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+}
+.cardTitle{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+/* Card List */
+.cardsList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    
+}
+/* Add this to your style.css file */
+.pagination{
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    background-color: #BCBCBC;
+    filter: drop-shadow(0px 8px 28px rgba(24, 39, 75, 0.12));
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: none;
+    
+
+color: #ffffff;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+    
+  }
+  
+  .pagination button.active {
+    color: #6D6D6D;
+    background-color: #FFF;
+    filter: drop-shadow(0px 18px 88px rgba(24, 39, 75, 0.14)) drop-shadow(0px 8px 28px rgba(24, 39, 75, 0.12));
+  }
+  .blurred {
+    filter: blur(5px);
+  }
+  .helpingDiv{
+    width:400px;
+  }
+
+  /* -----card-2----- */
+  .card-2{
+    width: 274px;
+    height: 313px;
+   
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 88px -4px #18274B24;
+
+    box-shadow: 0px 8px 28px -6px #18274B1F;
+    display: flex;
+
+
+  }
